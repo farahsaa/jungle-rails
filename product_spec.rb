@@ -9,7 +9,7 @@ require 'rails_helper'
       @category = Category.new(name: "Test Category")
       @category.save!
       puts @category
-      @product = Product.new(name: "anisa", description:"test_descp", image:"image", price:2, quantity:3,  category_id: @category.id)
+      @product = Product.new(name: "sarah", description:"test_descp", image:"image", price:2, quantity:3,  category_id: @category.id)
       expect(@product).to be_valid
     end
 
